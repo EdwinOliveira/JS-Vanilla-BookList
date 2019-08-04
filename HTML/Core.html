@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Books List</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container p-2">
+        <div class="row d-block mt-5">
+            <div class="col-12">
+                <h1 class="text-center" id="alertsRole">
+                    <span><i class="fa fa-book-open text-primary"></i></span>
+                    <span>My</span>
+                    <span class="text-primary">Book</span>
+                    <span>List</span>
+                </h1>
+            </div>
+            <hr class="w-75">
+            <div class="col-12 containerBooKForm">
+                <form id="book-form">
+                    <div class="form-group">
+                        <label for="bookTitle">Book Title:</label>
+                        <input type="text" class="form-control border rounded" id="tittle">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookAuthor">Author Name:</label>
+                        <input type="text" class="form-control border rounded" id="author">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookISBN">ISBN:</label>
+                        <input type="number" min="0" class="form-control border rounded" id="isbn">
+                    </div>
+                    <div class="form-group text-center">
+                        <button class="btn btn-primary">Insert Book Record</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 mt-4">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Author Name</th>
+                            <th>Book ISBN</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="..\JS\Core.js">
+    </script>
+</body>
+
+</html>
